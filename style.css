@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Yanone+Kaffeesatz&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Herr Von Muellerhoff', cursive;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #000;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0 100px;
+}
+
+@media all and (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+}
+
+.push{
+    margin-right: auto;
+    padding-left: 50px;
+}
+
+.navbar li {
+    padding: 30px;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.mainContainer {
+    max-width: 1920px;
+    margin: auto;
+    padding: 0 50px;
+}
+
+h1, h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.grid-item {
+    display: flex;            /* flex item */
+    align-items: center;      /* center item*/
+    justify-content: center;  /* center item*/
+    color: #fff;
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+}
+
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 50px 1fr 2fr auto 1fr;
+    background-color: #fff;
+    border: 3px dashed #000;
+    margin: 50px;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #fff;
+    border: 3px dotted #000;
+    margin: 50px;
+}
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    background-color: #fff;
+    border: 3px double #000;
+    margin: 50px;
+}
+
+.grid-container-4 {
+    display: grid;
+    grid-template-rows: 90px 70px 50px 30px 30px 50px 70px 90px 90px 50px;
+    border: 3px ridge #000;
+    margin: 50px;
+}
+
+.grid-container-5 {
+    display: grid;
+    grid-template: 50px 90px / 150px 710px;
+    background-color: #fff;
+    border: 3px groove #000;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.grid-item.item_0 {
+    background-color: #26545d;
+}
+
+.grid-item.item_1 {
+    background-color: #bd2e47;
+}
+
+.grid-item.item_2 {
+    background-color: #eb9e2b;
+    color: #000;
+}
+
+.grid-item.item_3 {
+    background-color: #edddcc;
+    color: #000;
+}
+
+.grid-item.item_4 {
+    background-color: #877c42;
+}
+
+.grid-item.item_5 {
+    background-color: #e1c8a0;
+    color: #000;
+}
+
+.grid-item.item_6 {
+    background-color: #2cb3a2;
+    color: #000;
+}
+
+.grid-item.item_7 {
+    background-color: #0c86bb;
+}
+
+.grid-item.item_8 {
+    background-color: #f6d669;
+    color: #000;
+}
+
+.grid-item.item_9 {
+    background-color: #778899;
+    color: #000;
+}
+
+
+.grid-container-6 {
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    
+    gap: 1px; 
+    background-color: #000;
+    margin: 50px;
+}
+
+.item-0 {
+    grid-row: span 3;
+    grid-column: span 3;
+    background-color: #fff;
+    color: #000;
+}
+
+.item-1 {
+    grid-row: span 2;
+    grid-column: span 3;
+    background-color: #ee1b24;
+    color: #000;
+}
+
+.item-2 {
+    grid-row: span 4;
+    grid-column: span 3;
+    background-color: #f9ed0f;
+    color: #000;
+}
+
+.item-3 {
+    grid-row: span 2;
+    grid-column: span 3;
+    background-color: #114a9b;
+}
+
+.item-4 {
+    grid-row: span 3;
+    grid-column: span 3;
+    background-color: #114a9b;
+}
+
+.item-5 {
+    grid-row: span 3;
+    grid-column: span 3;
+    background-color: #ee1b24;
+    color: #000;
+}
+
+.item-6 {
+    grid-row: span 4;
+    grid-column: span 3;
+    background-color: #f9ed0f;
+    color: #000;
+}
+
+.item-7 {
+    grid-row: span 3;
+    grid-column: span 3;
+    background-color: #fff;
+    color: #000;
+}
+
+.item-8 {
+    grid-row: span 4;
+    grid-column: span 3;
+    background-color: #fff;
+    color: #000;
+}
+
+.item-9 {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: #114a9b;
+}
+
+.item-10 {
+    grid-row: span 1;
+    grid-column: span 1;
+    background-color: #f9ed0f;
+    color: #000;
+}
+
+.item-11 {
+    grid-row: span 1;
+    grid-column: span 1;
+    background-color: #ee1b24;
+    color: #000;
+}
+
+.item-12 {
+    grid-row: span 2;
+    grid-column: span 3;
+    background-color: #ee1b24;
+    color: #000;
+}
+
+.item-13 {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: #114a9b;
+}
+
+.item-14 {
+    grid-row: span 2;
+    grid-column: span 3;
+    background-color: #f9ed0f;
+    color: #000;
+}
+
+.item-15 {
+    grid-row: span 2;
+    grid-column: span 1;
+    background-color: #fff;
+    color: #000;
+}
+
+.grid-container-area-1 {
+    display: grid;
+    align-items: center;
+    grid-template-areas: "item-a item-b" "item-c item-d";
+}
+
+.grid-container-7 {
+    display: grid;
+    grid-gap: 1px;
+    background-color: #fff;
+    border: 3px groove #000;
+    margin: 50px;
+    grid-template-areas:
+    "item-a ."
+    ". item-d";
+}
+
+.grid-container-7 .grid-item.item_16 {
+    grid-area: item-a;
+    background-color: #0c86bb;
+    color: #000;
+}
+
+.grid-container-7 .grid-item.item_19 {
+    grid-area: item-d;
+        background-color: #2cb3a2;
+    color: #000;
+}
+
+.grid-container-8 {
+    display: grid;
+    grid-gap: 1px;
+    background-color: #fff;
+    border: 3px groove #000;
+    margin: 50px;
+    grid-template-areas:
+    ". item-b"
+    "item-c .";    
+}
+
+.grid-container-8 .grid-item.item_17 {
+    grid-area: item-b;
+    background-color: #eb9e2b;
+    color: #000;
+}
+
+.grid-container-8 .grid-item.item_18 {
+    grid-area: item-c;
+    background-color: #bd2e47;
+}
+
+.grid-container-9 {
+    display: grid;
+    grid-gap: 1px;
+    background-color: #fff;
+    border: 3px groove #000;
+    margin: 25px 50px;
+    grid-template-areas:
+    "item-a item-b"
+    "item-c .";
+}
+
+.grid-container-9 .grid-item.item_16 {
+    grid-area: item-a;
+    background-color: #0c86bb;
+    color: #000;
+}
+
+.grid-container-9 .grid-item.item_17 {
+    grid-area: item-b;
+    background-color: #eb9e2b;
+    color: #000;
+}
+
+.grid-container-9 .grid-item.item_18 {
+    grid-area: item-c;
+    background-color: #bd2e47;
+}
+
+.grid-container-10 {
+    display: grid;
+    grid-gap: 1px;
+    background-color: #fff;
+    border: 3px groove #000;
+    margin: 25px 50px;
+    grid-template-areas:
+    ". item-b"
+    "item-c item-d";
+}
+
+.grid-container-10 .grid-item.item_17 {
+    grid-area: item-b;
+    background-color: #eb9e2b;
+    color: #000;
+}
+
+.grid-container-10 .grid-item.item_18 {
+    grid-area: item-c;
+    background-color: #bd2e47;
+}
+
+.grid-container-10 .grid-item.item_19 {
+    grid-area: item-d;
+    background-color: #2cb3a2;
+    color: #000;
+}
+
+
+   /* FOOTER */
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.1rem;
+    height: 70px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#footer > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Return to top button */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 75px; /* Place the button at the bottom of the page */
+    right: 15px; /* Place the button 15px from the right */
+    z-index: 100; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #808080; /* Set a background color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 3px 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 30px; /* Increase font size */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* Add a permanent shadow */
+}
+  
+#myBtn:hover {
+    background-color: #000066; /* Add a dark-grey background on hover */
+}

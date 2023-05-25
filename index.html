@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>200523 CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li class="push"><a href="#">EOUS CSS Grid</a></li>
+                <li><a href="#">Columns</a></li>
+                <li><a href="#">Rows</a></li>
+                <li><a href="#">Area</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="mainContainer">
+        <div>
+            <h1>Grid template columns</h1>
+            <h3><em>* px (pixels), fr (fractional unit), auto</em></h3>
+            <p></p>
+            <div class="grid-container-1">
+                <div class="grid-item item_0">0</div>
+                <div class="grid-item item_1">1</div>
+                <div class="grid-item item_2">2</div>
+                <div class="grid-item item_3">3</div>
+                <div class="grid-item item_4">4</div>
+                <div class="grid-item item_5">5</div>
+                <div class="grid-item item_6">6</div>
+                <div class="grid-item item_7">7</div>
+                <div class="grid-item item_8">8</div>
+                <div class="grid-item item_9">9</div>
+            </div>
+        </div>
+
+        <div>
+            <h1>Grid template columns</h1>
+            <h3><em>* repeat(number, (no.)fr)</em></h3>
+            <p></p>
+            <div class="grid-container-2">
+                <div class="grid-item item_0">0</div>
+                <div class="grid-item item_1">1</div>
+                <div class="grid-item item_2">2</div>
+                <div class="grid-item item_3">3</div>
+                <div class="grid-item item_4">4</div>
+                <div class="grid-item item_5">5</div>
+                <div class="grid-item item_6">6</div>
+                <div class="grid-item item_7">7</div>
+                <div class="grid-item item_8">8</div>
+                <div class="grid-item item_9">9</div>
+            </div>
+        </div>
+        <div>
+            <h1>Grid template columns</h1>
+            <h3><em>* percentage % (unit of proportion)</em></h3>
+            <p></p>
+            <div class="grid-container-3">
+                <div class="grid-item item_0">0</div>
+                <div class="grid-item item_1">1</div>
+                <div class="grid-item item_2">2</div>
+                <div class="grid-item item_3">3</div>
+                <div class="grid-item item_4">4</div>
+                <div class="grid-item item_5">5</div>
+                <div class="grid-item item_6">6</div>
+                <div class="grid-item item_7">7</div>
+                <div class="grid-item item_8">8</div>
+                <div class="grid-item item_9">9</div>
+            </div>
+        </div>
+        <div>
+            <h1>Grid template rows</h1>
+            <h3><em>* px (pixels)</em></h3>
+            <p></p>
+            <div class="grid-container-4">
+                <div class="grid-item item_0">0</div>
+                <div class="grid-item item_1">1</div>
+                <div class="grid-item item_2">2</div>
+                <div class="grid-item item_3">3</div>
+                <div class="grid-item item_4">4</div>
+                <div class="grid-item item_5">5</div>
+                <div class="grid-item item_6">6</div>
+                <div class="grid-item item_7">7</div>
+                <div class="grid-item item_8">8</div>
+                <div class="grid-item item_9">9</div>
+            </div>
+        </div>
+        <div>
+            <h1>Grid template rows / columns</h1>
+            <h3><em>* px (pixels)</em></h3>
+            <h3><em>* overflow hidden</em></h3>
+            <p></p>
+            <div class="grid-container-5">
+                <div class="grid-item item_0">0</div>
+                <div class="grid-item item_1">1</div>
+                <div class="grid-item item_2">2</div>
+                <div class="grid-item item_3">3</div>
+                <div class="grid-item item_4">4</div>
+                <div class="grid-item item_5">5</div>
+                <div class="grid-item item_6">6</div>
+                <div class="grid-item item_7">7</div>
+                <div class="grid-item item_8">8</div>
+                <div class="grid-item item_9">9</div>
+            </div>
+        </div>
+        <div>
+            <h1>CSS Grid</h1>
+            <h3><em>* rows & columns repeat(number, (no.)fr)</em></h3>
+            <p></p>
+            <div class="grid-container-6">
+                <div class="grid-item item-0">0</div>
+                <div class="grid-item item-1">1</div>
+                <div class="grid-item item-2">2</div>
+                <div class="grid-item item-3">3</div>
+                <div class="grid-item item-4">4</div>
+                <div class="grid-item item-5">5</div>
+                <div class="grid-item item-6">6</div>
+                <div class="grid-item item-7">7</div>
+                <div class="grid-item item-8">8</div>
+                <div class="grid-item item-9">9</div>
+                <div class="grid-item item-10">10</div>
+                <div class="grid-item item-11">11</div>
+                <div class="grid-item item-12">12</div>
+                <div class="grid-item item-13">13</div>
+                <div class="grid-item item-14">14</div>
+                <div class="grid-item item-15">15</div>
+            </div>
+        </div>
+        
+        <div>
+            <h1>Grid template area</h1>
+            <h3><em>* grid template areas 2 items x 2 items</em></h3>
+            <p></p>
+            <div class="grid-container-area-1">
+                <div class="grid-container-7">
+                    <div class="grid-item item_16">0</div>
+                    <!-- <div class="grid-item item_17">1</div>
+                    <div class="grid-item item_18">2</div> -->
+                    <div class="grid-item item_19">3</div>
+                </div>
+                <div class="grid-container-8">
+                    <!-- <div class="grid-item item_16">0</div> -->
+                    <div class="grid-item item_17">1</div>
+                    <div class="grid-item item_18">2</div>
+                    <!-- <div class="grid-item item_19">3</div> -->
+                </div>
+                <div class="grid-container-9">
+                    <div class="grid-item item_16">0</div>
+                    <div class="grid-item item_17">1</div>
+                    <div class="grid-item item_18">2</div>
+                    <!-- <div class="grid-item item_19">3</div> -->
+                </div>
+                <div class="grid-container-10">
+                    <!-- <div class="grid-item item_16">0</div> -->
+                    <div class="grid-item item_17">1</div>
+                    <div class="grid-item item_18">2</div>
+                    <div class="grid-item item_19">3</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <a href="#" class="item"><em>&copy; 2023 EOUS CSS Grid "All rights reserved"</em></a>
+        <a href="#" class="item">About</a>
+        <a href="#" class="item">Content</a>
+        <a href="#" class="item">Contact</a>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#11161;</button> 
+    <script src="script.js"></script> 
+</body>
+</html>
